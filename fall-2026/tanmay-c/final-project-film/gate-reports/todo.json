@@ -1,0 +1,247 @@
+{
+  "video": "show-tell-veracite-pitch",
+  "metadata": {
+    "slug": "show-tell-veracite-pitch",
+    "title": "Veracite",
+    "topic": "VERACITE \u00b7 FINAL PROJECT PITCH",
+    "skill": "show-tell",
+    "style_preset": "show-tell",
+    "channel": "veracite",
+    "channel_title": "Veracite",
+    "persona": "Tanmay Chandan",
+    "author": "Tanmay Chandan",
+    "voice": "am_onyx",
+    "voice_kokoro": "am_onyx",
+    "engine": "kokoro",
+    "clock": "narration",
+    "palette": "claude",
+    "register": "first person, plain",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "width": 3840,
+    "height": 2160,
+    "caption_policy": "none",
+    "greeting_language": "English (Hello)",
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt"
+    ],
+    "bookend_exempt_reason": "show-tell style: opens on the hesitant writer + terms card, no verdict card; Your Turn is the Claude.ai composer. AUTHOR OVERRIDE (Tanmay, 2026-10-24): the film is narrated by the author in the first person, so there is no Liam / in-for-Bear persona and no @NikBearBrown handle anywhere \u2014 voice, screen, outro or metadata. BOUT is therefore a drawn Manim title card instead of ClaudeTitleOutro, whose handle is hard-coded by OUTRO-LOCK.md with no prop override. The outro bookend check is expected to FAIL on pattern for exactly this reason; the author's rule wins and the failure is recorded in SHOTLIST.md and ../build-log.md.",
+    "audience": "a hiring manager or engineer evaluating a forward deployed engineer candidate",
+    "source_doc": "SOURCES.md \u2014 S1 RideReady commit 5d6e68e 'scoped retrieval by vehicle'; S2 RideReady evaluation report (0.547 Camry chunk, 0.25 floor); S3 RideReady tester survey n=7 ('I trusted the citations' 3.71/5, lowest of six); S4 Veracite software design document v0.10; S5 RAGAS and ALCE public documentation",
+    "playlist": "Computational Skepticism",
+    "chapter_number": 0,
+    "tags": [
+      "Veracite",
+      "RAG evaluation",
+      "citation checking",
+      "LLM as judge",
+      "retrieval augmented generation",
+      "computational skepticism",
+      "Tanmay Chandan"
+    ],
+    "build": {
+      "at": "2026-10-24T20:15:49",
+      "cut": "review",
+      "filled": 17,
+      "of": 17,
+      "slates": [],
+      "skin_warnings": [
+        "BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' \u2014 COLD OPEN LAW wants ClaudeComposerAsk",
+        "BOUT: palette=claude but the outro is 'un-annotated' \u2014 OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "source_of_truth": "beat_sheet.json \u2014 edit the sheet, not this file",
+  "beats_total": 17,
+  "beats_open": 0,
+  "beats": [
+    {
+      "beat_id": "BIDEA",
+      "status": "filled",
+      "on_disk": "media/BIDEA.mp4",
+      "method": "remotion",
+      "who": "pipeline",
+      "scene_hint": null,
+      "prompt": null,
+      "slot": "media/BIDEA.mp4",
+      "label": "Hello. I'm Tanmay, and this is the pitch for my final project. The question isn't whether an AI app "
+    },
+    {
+      "beat_id": "BDEFS",
+      "status": "filled",
+      "on_disk": "media/BDEFS.mp4",
+      "method": "remotion",
+      "who": "pipeline",
+      "scene_hint": null,
+      "prompt": null,
+      "slot": "media/BDEFS.mp4",
+      "label": "Four terms. RAG: an app that answers from retrieved documents. Citation: the passage an answer point"
+    },
+    {
+      "beat_id": "B00",
+      "status": "filled",
+      "on_disk": "manim/B00.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B00.mp4",
+      "label": "I built RideReady, an assistant that answers driver questions from car owner's manuals. While testin"
+    },
+    {
+      "beat_id": "B01",
+      "status": "filled",
+      "on_disk": "manim/B01.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B01.mp4",
+      "label": "The app still declined correctly. But that was luck, not design. Nothing in my pipeline checked that"
+    },
+    {
+      "beat_id": "B02",
+      "status": "filled",
+      "on_disk": "manim/B02.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B02.mp4",
+      "label": "In a later version, I added a vehicle filter to retrieval. The open question is whether that filter "
+    },
+    {
+      "beat_id": "B03",
+      "status": "filled",
+      "on_disk": "manim/B03.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B03.mp4",
+      "label": "When seven people tested RideReady, \"I trusted the citations\" scored lowest of six questions: three "
+    },
+    {
+      "beat_id": "B04",
+      "status": "filled",
+      "on_disk": "manim/B04.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B04.mp4",
+      "label": "Veracite will be a command-line tool that checks each claim in a RAG answer against the passage it c"
+    },
+    {
+      "beat_id": "B05",
+      "status": "filled",
+      "on_disk": "manim/B05.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B05.mp4",
+      "label": "RAGAS checks each claim against all the retrieved text pooled together, and gives one faithfulness s"
+    },
+    {
+      "beat_id": "B06",
+      "status": "filled",
+      "on_disk": "manim/B06.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B06.mp4",
+      "label": "One rule: Veracite will never pass a claim by default. Missing vehicle metadata becomes \"unknown\". A"
+    },
+    {
+      "beat_id": "B07",
+      "status": "filled",
+      "on_disk": "manim/B07.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B07.mp4",
+      "label": "The reader is a hiring manager for a forward deployed engineer role. In the first minute, they'll ru"
+    },
+    {
+      "beat_id": "B08",
+      "status": "filled",
+      "on_disk": "manim/B08.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B08.mp4",
+      "label": "It will prove I can build a checker, and measure how often the checker itself is wrong. Errors will "
+    },
+    {
+      "beat_id": "B09",
+      "status": "filled",
+      "on_disk": "manim/B09.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B09.mp4",
+      "label": "In scope: it runs locally, on recorded traces. Out of scope, on purpose: it will not plug into a liv"
+    },
+    {
+      "beat_id": "B10",
+      "status": "filled",
+      "on_disk": "manim/B10.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B10.mp4",
+      "label": "What could sink it: the judge being wrong in ways I can't see, like a false \"supported\". So the held"
+    },
+    {
+      "beat_id": "B11",
+      "status": "filled",
+      "on_disk": "manim/B11.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B11.mp4",
+      "label": "Why this project? It's a mix. I already build RAG pipelines in Python, and my RideReady repo and its"
+    },
+    {
+      "beat_id": "B12",
+      "status": "filled",
+      "on_disk": "manim/B12.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/B12.mp4",
+      "label": "What exists today: the Veracite design document, the RideReady repo with its fix commit, and that re"
+    },
+    {
+      "beat_id": "BHTF",
+      "status": "filled",
+      "on_disk": "media/BHTF.mp4",
+      "method": "remotion",
+      "who": "pipeline",
+      "scene_hint": null,
+      "prompt": null,
+      "slot": "media/BHTF.mp4",
+      "label": "Your turn. Take one answer from any AI app that cites sources. For each fact in it, open the cited p"
+    },
+    {
+      "beat_id": "BOUT",
+      "status": "filled",
+      "on_disk": "manim/BOUT.mp4",
+      "method": "manim",
+      "who": "pipeline",
+      "scene_hint": "animated_graphics",
+      "prompt": null,
+      "slot": "manim/BOUT.mp4",
+      "label": "Veracite. Tanmay Chundan"
+    }
+  ]
+}
